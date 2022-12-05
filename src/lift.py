@@ -1,4 +1,5 @@
 import math
+import datetime
 
 class Lift:
     def __init__(self, name, weight, lbs_per_lift, lifts_per_week, milestones):
@@ -21,3 +22,8 @@ class Lift:
 
     def round_result(self, result, round):
         return math.ceil(result) if round else result
+
+    def format_milestone(self, milestone, units="lbs"):
+        weeks_until_milestone = self.weeks_until_milestone(milestone=milestone)
+        future_date = datetime.datetime.now() + datetime.timedelta(weeks=weeks_until_milestone)
+        return f"{self.name} {milestone} {units} on {future_date.strftime('%Y-%m-%d')}  ({weeks_until_milestone} weeks)\n"
