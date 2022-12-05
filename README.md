@@ -6,6 +6,11 @@ extrapolates out certain miletones
 
 ### improvements
 - dynamically bound size of graph to milestones
-- generate interactive UI to overlay these
-- Create kinks in planning
-- convert lbs to kgs
+- generate interactive UI (web based?)
+- kinks in progress estimates
+- interconvert between lbs/kgs
+- compute 1RM and other rep ranges
+- include milestones in label
+
+### test output
+![test_output](/img/test_v1.png)
