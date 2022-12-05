@@ -17,3 +17,19 @@ regressing across a series of lifts parameterized by current weight and progress
 
 ### example output
 ![test_output](/img/test_v1.png)
+
+```
+squat 275 lbs on 2023-01-22  (7 weeks)
+squat 315 lbs on 2023-02-26  (12 weeks)
+squat 365 lbs on 2023-04-16  (19 weeks)
+
+deadlift 315 lbs on 2023-01-01  (4 weeks)
+deadlift 405 lbs on 2023-03-26  (16 weeks)
+
+bench 200 lbs on 2023-01-01  (4 weeks)
+bench 225 lbs on 2023-02-19  (11 weeks)
+bench 275 lbs on 2023-05-21  (24 weeks)
+
+press 135 lbs on 2023-01-15  (6 weeks)
+press 150 lbs on 2023-02-12  (10 weeks)
+```
