@@ -1,11 +1,11 @@
 # starting-strength
+regressing across a series of lifts parameterized by current weight and progress, extrapolates out certain miletones, generates graph
 
-regressing across a series of lifts parameterized by current weight and progress
+### how to use me
 
-extrapolates out certain miletones
 
 ### improvements
-- dynamically bound size of graph to milestones
+- decay factor to increase realistic regression
 - generate interactive UI to overlay these
-- Create kinks in planning
+- dynamically bound size of graph to milestones
 - convert lbs to kgs

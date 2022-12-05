@@ -1,5 +1,5 @@
 
-from lift import Lift
+from config import lifts
 from utils import random_color
 import matplotlib.pyplot as plt
 import matplotlib.dates as mdates
@@ -9,22 +9,11 @@ import os
 import datetime
 
 OUTPUT_DIR = os.path.abspath(os.path.join(os.path.dirname( __file__ ), '..', 'out'))
-
-## CONFIG BELOW HERE
 TOTAL_WEEKS = 26
 WEEK_INTERVALS = 28
 
-lifts = [
-    Lift(name="squat", weight=225, lbs_per_lift=5, lifts_per_week=1.5, milestones=[275, 315, 365]),
-    Lift(name="deadlift", weight=290, lbs_per_lift=5, lifts_per_week=1.5, milestones=[315, 405]),
-    Lift(name="bench", weight=185, lbs_per_lift=2.5, lifts_per_week=1.5, milestones=[200, 225, 275]),
-    Lift(name="press", weight=115, lbs_per_lift=2.5, lifts_per_week=1.5, milestones=[135, 150]),
-]
-## CONFIG ABOVE HERE
-
-total_weeks = TOTAL_WEEKS
 now = dt.datetime.now()
-then = now + dt.timedelta(weeks=total_weeks)
+then = now + dt.timedelta(weeks=TOTAL_WEEKS)
 days = mdates.drange(now,then,dt.timedelta(days=1))
 
 output_buffer = ""
