@@ -1,8 +1,6 @@
 # starting-strength
 
-regressing across a series of lifts parameterized by current weight and progress
-
-extrapolates out certain miletones
+regressing across a series of lifts parameterized by current weight and progress, extrapolates out milestones
 
 ### improvements
 - dynamically bound size of graph to milestones
@@ -12,5 +10,5 @@ extrapolates out certain miletones
 - compute 1RM and other rep ranges
 - include milestones in label
 
-### test output
+### example output
 ![test_output](/img/test_v1.png)
